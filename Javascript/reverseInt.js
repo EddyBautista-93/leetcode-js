@@ -2,7 +2,6 @@
 
 // Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
- 
 
 // Example 1:
 
