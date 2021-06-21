@@ -25,6 +25,10 @@
 // ParseFloat converts whatever passes to a num , string the num to access the split, reverse and join method then check to see if its positive or negative. 
 
 const reverseInt = num => {
-   const reversedInt = parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
-   return reversedInt < Math.pow(2, 31) * -1 || reversedInt > Math.pow(2, 31) - 1 ? 0 : reversedInt; // check to see if the returned int falls into the 32 bit range category 
+   const revInt = parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+   console.log(revInt);
+   return revInt < Math.pow(2, 31) * -1 || revInt > Math.pow(2, 31) - 1 ? 0 : revInt; // check to see if the returned int falls into the 32 bit range category 
 }
+
+
+reverseInt(2876867868623);
