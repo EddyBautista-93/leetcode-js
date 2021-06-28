@@ -33,7 +33,16 @@
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
 
-const isValid = (inputString) => {
+const isValid = (inputString) => { 
+    var charParenthesesArray = inputString.split('');
 
+    if(charParenthesesArray.includes('(')){
+    
+    }
+    charParenthesesArray.forEach(element => {
+        console.log(element);
+    });
     return null;
 }
+
+isValid("()")
